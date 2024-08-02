@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="./files/myPicIcon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="mode">
+  <header>
+    <nav class="navbar">
+      <ul class="space-arround">
+        <li class="nav-inline logo">Kishan Jain</li>
+        <li class="nav-inline list-hidden">
+          <a href="#home" class="active">Home</a>
+        </li>
+        <li class="nav-inline list-hidden"><a href="#aboutMe">About</a></li>
+        <li class="nav-inline list-hidden"><a href="#myProject">My Project</a></li>
+        <li class="nav-inline list-hidden"><a href="#contact">Contact</a></li>
+        <li class="nav-inline toggle ">
+          <button type="button" class="inline-flex " onclick="toggleMenu()">&#9776;</button>
+        <li class="responce-list ">
+          <a href="#home" class="active">Home</a>
+        </li>
+        <li class="responce-list "><a href="#aboutMe">About</a></li>
+        <li class="responce-list "><a href="#myProject">My Project</a></li>
+        <li class="responce-list "><a href="#contact">Contact</a></li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="intro">
+      <div class="intro inline-flex">
+        <div class="w-45 inline-flex justify-center items-center">
+          <img src="./files/myPic.jpg" alt="my pic" width="300px" id="myMainPic" />
+        </div>
+        <div class="w-45 inline-flex justify-center items-center">
+          <pre>
+              Hello, I'm 
+              <strong style="font-size: 30px;">Kishan Jain</strong>
+              Full stack Developer, Backend Developer<br />
+              <button type="button" class="button"><a href="./files/myResume.pdf" target="_blank">My Resume</a></button> <br />
+              <a href="http://linkedin.com/in/kishan-jain-88ba672ba" target="_blank"><img src="./files/linkedin.png" alt="linkedin" width="30px"></a> <a href="https://github.com/Kishan-Jain" target="_blank"><img src="./files/github.jpg" alt="github" width="30px"></a>
+            </pre>
+        </div>
+      </div>
+    </section>
+    <section id="aboutMe">
+      <div class="inline-flex w-100">
+        <div class="flex aboutMe-box justify-center  w-45">
+          <h1 class="main-heading">My skills</h1>
+          <div class="m-auto">
+            <ul class="m-auto">
+
+              <li>Html, Css, bootstrap</li>
+              <li>Javascript, python (advance)</li>
+              <li>C, Java and more (bigginer)</li>
+              <li>NodeJs, ExpressJs, RectJs</li>
+              <li>MongoDb, MySql</li>
+              <li>RestFul Api (PostMan)</li>
+              <li>Version Controle(Github)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="academic flex justify-center aboutMe-box w-45">
+          <h1 class="main-heading">Academic Details</h1>
+          <ul>
+            <li>
+              <strong>B.Sc. Computer Application</strong>.,<br /> Pg college, Tikamgarh(MP)
+              <br />(july2016 - june 2019) <br />(Basics of Computer and Programming)<br />
+            </li><br />
+            <li>
+              <strong>Diploma of Computer Application</strong>., <br />MCNUJC university, Bhopal(MP)
+              <br />(july 2016 - june 2017)
+              <br />(fundamental of Computer, Operating
+              Synstem, DBMS and more)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="myProject">
+      <div>
+        <h1 class="main-heading">My Projects</h1>
+        <div class="inline-flex">
+          <div class="projects-box ">
+            <h3>An Ecommerce Website (Smart Bajaar)</h3>
+            <small> github link : <a href="https://github.com/Kishan-Jain/Ecommarce_project.git" target="_blank">
+                Ecommerce Website</a></small>
+            <p style="padding-top: 10px;">This project combines ExpressJs and NodeJs for the backend,
+              MongoDB for the database, and React for the frontend. <br />
+              The website typically includes features like user authentication, product catalog management, shopping
+              cart functionality, and secure payment processing. Users can browse products, add them to their cart, and
+              complete purchases.
+            </p>
+          </div>
+          <div class="projects-box">
+            <h3>An Employee Management Website</h3>
+            <small> github link : <a href="https://github.com/Kishan-Jain/Employee-management-system.git"
+                target="_blank"> Employee Management Website</a></small>
+            <p style="padding-top: 10px;">
+              An Employee Management Website is designed to streamline HR processes and enhance workforce management.
+              It typically includes features like employee onboarding, attendance tracking, leave management,
+              performance evaluations, and payroll processing. The platform allows HR managers to maintain comprehensive
+              employee records, track work hours, and manage benefits efficiently.
+            </p>
+          </div>
+          <div class="projects-box">
+            <h3>An Event Management Application</h3>
+            <small>github link : <a href="https://github.com/Kishan-Jain/Event-managment-application.git"
+                target="_blank"> Event Management Application</a></small>
+            <p style="padding-top: 10px;">
+              An Event Management Application built with the MERN stack (MongoDB, Express.js, React, Node.js). MongoDB stores event details, user data, and
+              registrations efficiently. Express.js handles server-side operations and API routes, while Node.js ensures
+              smooth server execution. React provides a dynamic and responsive user interface for creating, viewing, and
+              managing events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="main-heading">Contact Info</h2>
+      <ul>
+        <li>
+          Email Address : <a href="mailto:Jainshab7000@gmail.com" target="_blank">Jainshab7000@gmail.com</a>
+        </li>
+        <li>Mob Number : 9039443661, 7909392470</li>
+        <li>Address : Near New bus Stand, Tikamgarh(MP), 472001</li>
+      </ul>
+    </section>
+  </main>
+  <footer>This is Kishan</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
