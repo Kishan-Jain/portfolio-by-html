@@ -94,10 +94,14 @@ ul{
     margin-left: 0;
     margin-right: 0;
 }
+.margin-top-5px{
+    margin-top: 5px;
 
+}
 .aboutMe-box{
+    padding: 20px;
     border: 2px solid black;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     margin: 20px;
 }
@@ -110,7 +114,7 @@ ul{
 .projects-box{
     background-color: rgba(255, 255, 232, 0.852);
     border: 2px solid black;
-    height: 250px;
+    height: 260px;
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
@@ -172,12 +176,20 @@ button a:hover{
     padding: 50px 0 50px 0;
 }
 
-#myMainPic{
-    border: 0;
-    border-radius: 50%;
+.intro-pera{
+    padding: 50px;
 
 }
 
+#myMainPic{
+    border: 0;
+    border-radius: 50%;
+    width: 300px;
+
+}
+.showIn400Px{
+    display: none;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -204,6 +216,9 @@ button a:hover{
     
 }
 
+.not-select{
+    user-select: none;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -216,10 +231,16 @@ button a:hover{
     .aboutMe-box {
         width: 100%;
     }
+    .intro-pera{
+        padding: 0;
+    }
 }
 
-@media screen and (max-width : 850px) {
-    
+@media screen and (max-width : 800px) {
+    #aboutMe div{
+        display: block;
+        width: auto;  
+    }
 }
 
 
@@ -230,10 +251,7 @@ button a:hover{
         width: auto;
     }
 
-    #aboutMe div{
-        display: block;
-        width: auto;  
-    }
+    
     .aboutMe-box{
         height: auto;
     }
@@ -275,4 +293,19 @@ button a:hover{
         width: 100%;
         height: auto
     };
+}
+
+@media screen and (max-width : 400px){
+    #myMainPic{
+        width: 100%;
+    }
+    .intro pre{
+        display:none;
+    }
+    .intro .showIn400Px{
+        display: inline;
+    }
+    header{
+        width: 400px;
+    }
 }

@@ -10,7 +10,7 @@
 </head>
 
 <body class="mode">
-  <header>
+  <header class="not-select">
     <nav class="navbar">
       <ul class="space-arround">
         <li class="nav-inline logo">Kishan Jain</li>
@@ -35,34 +35,85 @@
   <main>
     <section id="intro">
       <div class="intro inline-flex">
-        <div class="w-45 inline-flex justify-center items-center">
-          <img src="./files/myPic.jpg" alt="my pic" width="300px" id="myMainPic" />
+        <div class="w-45 inline-flex justify-center items-center not-select">
+          <img src="./files/myPic.jpg" alt="my pic" id="myMainPic" />
         </div>
-        <div class="w-45 inline-flex justify-center items-center">
+        <div class="w-45 inline-flex justify-center items-center not-select">
           <pre>
               Hello, I'm 
               <strong style="font-size: 30px;">Kishan Jain</strong>
-              Full stack Developer, Backend Developer<br />
+              Full stack Developer, 
+              Backend Developer<br />
               <button type="button" class="button"><a href="./files/myResume.pdf" target="_blank">My Resume</a></button> <br />
               <a href="http://linkedin.com/in/kishan-jain-88ba672ba" target="_blank"><img src="./files/linkedin.png" alt="linkedin" width="30px"></a> <a href="https://github.com/Kishan-Jain" target="_blank"><img src="./files/github.jpg" alt="github" width="30px"></a>
-            </pre>
+          </pre>
+          <p class="showIn400Px">
+            Hello, I'm <br/>
+            <strong style="font-size: 30px;">Kishan Jain</strong><br />
+            Full stack Developer, <br />
+            Backend Developer<br /><br />
+            <button type="button" class="button"><a href="./files/myResume.pdf" target="_blank">My Resume</a></button> <br /><br />
+            <a href="http://linkedin.com/in/kishan-jain-88ba672ba" target="_blank"><img src="./files/linkedin.png" alt="linkedin" width="30px"></a> <a href="https://github.com/Kishan-Jain" target="_blank"><img src="./files/github.jpg" alt="github" width="30px"></a>
+        </p>
         </div>
       </div>
+      <div class="intro intro-pera">
+        <span>
+          Dear Hiring Manager, I'm <strong>stack Web Developer(MERN Developer)</strong> with a 
+          strong foundation in <strong>JavaScript, Node.js, Express.js, React, MongoDB, and MySQL.</strong>
+          I am eager to bring my skills and enthusiasm to your innovative team.<br/>
+          During Learning and Training, I have completed several projects that have honed
+          my abilities in both front-end and back-end development. I have designed and 
+          developed web applications, ensuring they are user-friendly and efficient. <br/>My 
+          coursework and projects have provided me with a solid understanding of building 
+          and maintaining web applications, integrating databases, and working with APIs.
+          In addition to my technical skills, I possess strong problem-solving abilities, 
+          effective communication skills, and a collaborative mindset.
+          I am passionate about web development and am committed to continuous learning
+          and growth.<br/>
+          I believe that my fresh perspective, eagerness to learn, and strong interpersonal 
+          skills will be valuable assets to your team.
+          Thank you for considering my application. I look forward to the opportunity to 
+          discuss how my background and skills align with the goals.
+        </span>
+      </div>
     </section>
-    <section id="aboutMe">
+    <section id="aboutMe" class="not-select">
       <div class="inline-flex w-100">
         <div class="flex aboutMe-box justify-center  w-45">
           <h1 class="main-heading">My skills</h1>
           <div class="m-auto">
             <ul class="m-auto">
-
-              <li>Html, Css, bootstrap</li>
-              <li>Javascript, python (advance)</li>
-              <li>C, Java and more (bigginer)</li>
-              <li>NodeJs, ExpressJs, RectJs</li>
-              <li>MongoDb, MySql</li>
-              <li>RestFul Api (PostMan)</li>
-              <li>Version Controle(Github)</li>
+              <li><strong>Basics</strong><br />
+                <ul>
+                <li>Javascript, Python (Advance)</li>
+                <li>C, Java and more (Beginner)</li>
+                </ul>
+              </li>
+              <li class="margin-top-5px"> <strong>FrountEnd Development Tolls</strong>
+                <ul>
+                  <li>HTML, Css</li>
+                  <li>Bootstrap, Tailwind Css</li>
+                  <li>ReactJS library</li>
+                </ul>
+              </li>
+              <li class="margin-top-5px"><strong>BackEnd Development Tolls</strong>
+                <ul>
+                  <li>NodeJs, ExpressJs framework</li>
+                  <li>RestFul Api (PostMan)</li>
+                </ul>
+              </li>
+              <li class="margin-top-5px"> <strong>Database Management System</strong>
+                <ul>
+                  <li>NoSql : MongoDB</li>
+                  <li>Sql : MySQL</li>
+                </ul>
+              </li>
+              <li class="margin-top-5px"> <strong>Version Controle </strong>
+                <ul>
+                  <li>Git, Github</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -71,13 +122,16 @@
           <ul>
             <li>
               <strong>B.Sc. Computer Application</strong>.,<br /> Pg college, Tikamgarh(MP)
-              <br />(july2016 - june 2019) <br />(Basics of Computer and Programming)<br />
+              <br />(july2016 - june 2019) <br />( Basics of Computer application,
+              MS office, Data structure, Basic of Programming, C programming language, web page developing, DATABASE
+              MANAGEMENT SYSTEM and other subject like PHYSICS, MATHEMATICS and MORAL DEVELOPMENT
+              )<br />
             </li><br />
             <li>
               <strong>Diploma of Computer Application</strong>., <br />MCNUJC university, Bhopal(MP)
               <br />(july 2016 - june 2017)
-              <br />(fundamental of Computer, Operating
-              Synstem, DBMS and more)
+              <br />(Fundamental of Computer, Operating System, DATABASE MANAGEMENT SYSTEM, Data structure, basic of Programming,
+              web development)
             </li>
           </ul>
         </div>
@@ -85,7 +139,7 @@
     </section>
     <section id="myProject">
       <div>
-        <h1 class="main-heading">My Projects</h1>
+        <h1 class="main-heading not-select">My Projects</h1>
         <div class="inline-flex">
           <div class="projects-box ">
             <h3>An Ecommerce Website (Smart Bajaar)</h3>
@@ -124,7 +178,7 @@
       </div>
     </section>
     <section id="contact">
-      <h2 class="main-heading">Contact Info</h2>
+      <h2 class="main-heading not-select">Contact Info</h2>
       <ul>
         <li>
           Email Address : <a href="mailto:Jainshab7000@gmail.com" target="_blank">Jainshab7000@gmail.com</a>
