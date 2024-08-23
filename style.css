@@ -43,8 +43,6 @@ header{
     font-weight: bolder;
 }
 
-
-
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -111,18 +109,34 @@ ul{
     background-color: #ecead3;
 }
 
-.projects-box{
-    background-color: rgba(255, 255, 232, 0.852);
+.projects-box-main{
+    background-color: rgba(235, 235, 223, 0.852);
     border: 2px solid black;
-    height: 260px;
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
-    width: 310px;
+}
+.projects-box-main:hover{
+    background-color: rgba(203, 203, 191, 0.852);
+}
+
+.projects-box{
+    background-color: rgba(255, 255, 232, 0.852);
+    border: 0px solid black;
+    border-radius: 10px;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.projects-box h3 a{
+    text-decoration: none;
+    color: black;
 }
 
 .projects-box:hover{
-    border: 3px solid black;
+    border: 0px solid black;
     background-color: #ecead3;
 }
 
@@ -138,8 +152,18 @@ h3{
     display: inline-flex;
     
 }
+.inline{
+    display: inline;
+}
+.block{
+    display: block;
+}
 .d-flex{
     display: flex;
+}
+
+.m-10{
+    margin: 10px;
 }
 
 .justify-center{
